@@ -1,0 +1,36 @@
+img{
+    width: 250px;
+    margin-bottom: 30px;
+}
+form{
+    width: 500px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+input{
+    margin-bottom: 10px;
+}
+
+input[type="button"]{
+    margin-right: 10px;
+}
+
+
+.table-container {
+    max-height: 380px; /* Define a altura máxima do contêiner */
+    overflow-y: auto;  /* Ativa o scroll vertical */
+    border: 1px solid #ddd; /* Opcional: borda para demarcar a tabela */
+}
+
+.table {
+    width: 100%; /* Faz a tabela ocupar todo o espaço horizontal disponível */
+    border-collapse: collapse;
+}
+
+.table thead th {
+    position: sticky; /* Cabeçalho fixo */
+    top: 0;
+    background-color: #f8f9fa;
+    z-index: 1;
+}

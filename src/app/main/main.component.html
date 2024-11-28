@@ -1,0 +1,37 @@
+<form action="">
+    <div class="img">
+        <img src="assets/user.png" alt="" srcset="">
+    </div>
+
+    <input type="text" placeholder="Name" class="form-control" name="name" [(ngModel)]="cliente.name" />
+    <input type="number" placeholder="Age" class="form-control" name="age" [(ngModel)]="cliente.age" />
+    <input type="text" placeholder="City" class="form-control" name="city" [(ngModel)]="cliente.city">
+
+    <input type="submit" value="Register" *ngIf="btn_cadastro" class="btn btn-primary" (click)="register()" />
+    <input type="button" value="Edit" *ngIf="!btn_cadastro" class="btn btn-warning" (click)="edit()" />
+    <input type="button" value="Remove" *ngIf="!btn_cadastro" class="btn btn-danger" (click)="remove()" />
+    <input type="button" value="Cancel" *ngIf="!btn_cadastro" class="btn btn-secondary" (click)="cancel()"/>
+
+    <div class="table-container">
+        <table class="table" *ngIf="table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>City</th>
+                    <th>Select</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let c of clientes; index as i">
+                    <td>{{ i + 1 }}</td>
+                    <td>{{ c.name }}</td>
+                    <td>{{ c.age }}</td>
+                    <td>{{ c.city }}</td>
+                    <td><button class="btn btn-success" (click)="selectClient(i)">Select</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</form>
