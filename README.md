@@ -10,12 +10,12 @@ The application design is enhanced with  [Bootstrap](https://getbootstrap.com/),
 This is a **simple CRUD application** (Create, Read, Update, Delete) designed to showcase essential functionality and clean coding practices. It provides a straightforward way to manage data through a user-friendly interface.
 
 The application consumes a **RESTful API** built with **Spring Boot**.  
-You can check out the API repository here: [API Repository](https://github.com/example/api-repo)
+You can check out the API repository here: [API Repository](https://github.com/Kayquemts/API-Back)
 
 ---
 
 ## Live Demo
 The application is already up and running! 🚀  
-Check it out here: [MyApp Live Demo](https://example.com/myapp)
+Check it out here: [MyApp Live Demo](https://kayquemts.github.io/API-Front/)
 
 > **Note:** The backend is hosted on a free-tier plan, so the connection may take up to **7 minutes** to initialize. Thank you for your patience! 🙏
